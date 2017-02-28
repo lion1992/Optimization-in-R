@@ -84,5 +84,5 @@ BFGS <- function(X, y, H0, tol, MAXITER){
   plot(time, loss, type = "l",  xlab = "Time Elapsed", ylab = "Logloss", main = "Logloss vs. Time Elapsed");
   # plot the Accuracy vs. Iterations;
   plot(1:iter, err, type = "l",xlab = "Number of Iterations", ylab = "Accuracy", main = "Accuracy vs. Number of Iterations");
-  return (list(Weights = weights, Number_of_Iterations = iter, Final_LogLoss = logloss, Total_ElapsedTime = elapsed, FinalAccuracy = acc));
+  return (list(Weights = weights, Prob = pnew, Number_of_Iterations = iter, Final_LogLoss = logloss, Total_ElapsedTime = elapsed, FinalAccuracy = acc));
 }
